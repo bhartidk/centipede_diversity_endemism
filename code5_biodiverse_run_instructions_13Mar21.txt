@@ -1,0 +1,22 @@
+1. go the bin folder within the biodiverse folder 
+2. in a terminal type 
+sudo perl BiodiverseGUI.pl
+to open the Biodiverse GUI
+3. in the biodiverse GUI, click on Basedata and select import from the dropdown menu
+4. under the Import dialog, select the location of the input file
+5. under the Import options dialog, check the "data are in matrix form option", and select "," as the input field separator
+6. select id as the "text_group" variable, set x and y columns to ignore
+7. next to the first species name, select "Label start col". That until the end will be selected as the species data
+8. in the "reorder columns" dialog, no need to make any changes, click on okay
+9. click on no in the "remap labels" dialog
+10. click on the "trees" option and select "no" on the trees in tabular form dialog, navigate to the location of input file and say okay
+say no to remap the node names
+11. click on the "show" button on the right hand size to take a look at the data
+12. under the analysis tab, select spatial, within which select the following and say go -
+Endemism>Endemism whole
+Lists and counts>Richness 
+Phylogenetic endemism indices>Phylogenetic Endemism
+Phylogenetic indices>Phylogenetic diversity
+Phylogenetic indices (relative)>Relative Phylogenetic Diversity Type 2 and Relative Phylogenetic Endemism Type2
+13. click on analysis > randomisation, keep the randomise function as rand_structured, change the iterations to run as 1000 and click on randomise
+14. under the output tab there should be two tabs - spatial and randomise. click on spatial and export. choose spatial in the list to export drop-down and the delimited text format and say next. enter a file name and select location on the right hand panel and say okay - these are the observed values of indices. in the output tab, again choose spatial, select delimited text, say next and choose rand1>>spatial_results, enter filename and say okay - these are the results from randomisation
